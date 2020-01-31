@@ -1,0 +1,37 @@
+ _____                 _______            __  __  __   
+|     \ .-----..--.--.|   _   |.--.--..--|  ||__||  |_ 
+|  --  ||  -__||  |  ||       ||  |  ||  _  ||  ||   _|
+|_____/ |_____| \___/ |___|___||_____||_____||__||____|
+                                                       
+
+v3.3.0.0
+08:25:20<01> [AUDIT] [SUCCESS] Detected operating system of environment is debian.
+08:25:20<01> [AUDIT] [SUCCESS] Detected operating system version of environment is 10.1.
+08:25:20<01> [HOST] [INFO] Using OSS Index as default package vulnerabilities data source for NuGet package source.
+08:25:20<01> [AUDIT] [STATUS] Scanning NuGet packages.
+Scanning NuGet packages...Scanning NuGet packages.../ 08:25:20<01> [AUDIT] [SUCCESS] Scanned 1 NuGet packages.
+ Searching OSS Index for vulnerabilities for 1 packages... Waiting..... 08:25:20<07> [HOST] [SUCCESS] Got 1 total vulnerabilities for 1 packages from data source OSS Index.
+-\| 08:25:20<04> [AUDIT] [INFO] Evaluated 1 vulnerabilities with 1 matches to package version in 142 ms.
+ 
+Package Source Audit Results
+============================
+1 total vulnerability found in NuGet package source audit. Total time for audit: 416 ms.
+
+[1/1] LibGit2Sharp [VULNERABLE]  1 known vulnerabilities,  1 affecting installed package version(s): [0.20.0]
+--[1/1] Git vulnerability requires git client updates 
+  --Description:
+    --A critical Git security vulnerability has been announced today, affecting all versions of the official Git client and all related software that interacts with Git repositories, including GitHub for Windows and GitHub for Mac.
+      Because this is a client-side only vulnerability, github.com and GitHub Enterprise are not directly affected.The vulnerability concerns Git and Git-compatible clients that access Git repositories in a case-insensitive or case-normalizing filesystem.
+      An attacker can craft a malicious Git tree that will cause Git to overwrite its own .git/config file when cloning or checking out a repository, leading to arbitrary command execution in the client machine.
+      Git clients running on OS X (HFS+) or any version of Microsoft Windows (NTFS, FAT) are exploitable through this vulnerability.
+      Linux clients are not affected if they run in a case-sensitive filesystem.
+0.20.0
+  --Id: cfacab46-bdf8-40d4-8d50-06420a9c0013
+  --Reference: https://ossindex.sonatype.org/vuln/cfacab46-bdf8-40d4-8d50-06420a9c0013
+  --Provided by: OSS Index
+
+
+Vulnerabilities Data Providers
+==============================
+
+OSS Index https://ossindex.sonatype.org OSS Index is a free index of software information, focusing on vulnerabilities. The data has been made available to the community through a REST API as well as several open source tools. Particular focus is being made on software packages, both those used for development libraries as well as installation packages.

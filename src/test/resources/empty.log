@@ -1,0 +1,19 @@
+ _____                 _______            __  __  __   
+|     \ .-----..--.--.|   _   |.--.--..--|  ||__||  |_ 
+|  --  ||  -__||  |  ||       ||  |  ||  _  ||  ||   _|
+|_____/ |_____| \___/ |___|___||_____||_____||__||____|
+                                                       
+
+v3.3.0.0
+08:25:19<01> [AUDIT] [SUCCESS] Detected operating system of environment is debian.
+08:25:19<01> [AUDIT] [SUCCESS] Detected operating system version of environment is 10.1.
+08:25:19<01> [HOST] [INFO] Using OSS Index as default package vulnerabilities data source for NuGet package source.
+08:25:19<01> [AUDIT] [STATUS] Scanning NuGet packages.
+Scanning NuGet packages...Scanning NuGet packages.../ 08:25:19<01> [AUDIT] [SUCCESS] Scanned 0 NuGet packages.
+ 08:25:19<01> [AUDIT] [INFO] Not reporting package source audit with zero vulnerabilities.
+ 
+Package Source Audit Results
+============================
+0 total vulnerabilities found in NuGet package source audit. Total time for audit: 250 ms.
+
+

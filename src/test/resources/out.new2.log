@@ -1,0 +1,424 @@
+ _____                 _______            __  __  __   
+|     \ .-----..--.--.|   _   |.--.--..--|  ||__||  |_ 
+|  --  ||  -__||  |  ||       ||  |  ||  _  ||  ||   _|
+|_____/ |_____| \___/ |___|___||_____||_____||__||____|
+                                                       
+
+v3.3.0.0
+08:25:18<01> [AUDIT] [SUCCESS] Detected operating system of environment is debian.
+08:25:18<01> [AUDIT] [SUCCESS] Detected operating system version of environment is 10.1.
+08:25:18<01> [HOST] [INFO] Using OSS Index as default package vulnerabilities data source for NuGet package source.
+08:25:19<01> [AUDIT] [STATUS] Scanning NuGet packages.
+Scanning NuGet packages...Scanning NuGet packages.../ 08:25:19<01> [AUDIT] [SUCCESS] Scanned 33 NuGet packages.
+ Searching OSS Index for vulnerabilities for 33 packages... Waiting.....- 08:25:19<04> [HOST] [SUCCESS] Got 47 total vulnerabilities for 33 packages from data source OSS Index.
+\|/ 08:25:19<05> [AUDIT] [INFO] Evaluated 47 vulnerabilities with 47 matches to package version in 182 ms.
+ 
+Package Source Audit Results
+============================
+47 total vulnerabilities found in NuGet package source audit. Total time for audit: 536 ms.
+
+[1/33] Node.js [VULNERABLE]  17 known vulnerabilities,  17 affecting installed package version(s): [4.1.1]
+--[1/17] [CVE-2016-6306]  Out-of-bounds Read 
+  --Description:
+    --The certificate parser in OpenSSL before 1.0.1u and 1.0.2 before 1.0.2i might allow remote attackers to cause a denial of service (out-of-bounds read) via crafted certificate operations, related to s3_clnt.c and s3_srvr.c.
+4.1.1
+  --Id: 5cea2262-c893-45eb-9969-fc71d7d847c0
+  --Reference: https://ossindex.sonatype.org/vuln/5cea2262-c893-45eb-9969-fc71d7d847c0
+  --Provided by: OSS Index
+--[2/17] [CVE-2016-6304]  Resource Management Errors 
+  --Description:
+    --Multiple memory leaks in t1_lib.c in OpenSSL before 1.0.1u, 1.0.2 before 1.0.2i, and 1.1.0 before 1.1.0a allow remote attackers to cause a denial of service (memory consumption) via large OCSP Status Request extensions.
+4.1.1
+  --Id: 0aa6a4fb-b1e9-4ca1-be73-484b62190de7
+  --Reference: https://ossindex.sonatype.org/vuln/0aa6a4fb-b1e9-4ca1-be73-484b62190de7
+  --Provided by: OSS Index
+--[3/17] [CVE-2016-6303] Integer overflow in the MDC2&#95;Update function in crypto/mdc2/mdc2dgst.c in OpenSS... 
+  --Description:
+    --Integer overflow in the MDC2_Update function in crypto/mdc2/mdc2dgst.c in OpenSSL before 1.1.0 allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.
+4.1.1
+  --Id: fbed5655-5b6e-479b-9fba-f407df5c1382
+  --Reference: https://ossindex.sonatype.org/vuln/fbed5655-5b6e-479b-9fba-f407df5c1382
+  --Provided by: OSS Index
+--[4/17] [CVE-2016-3956]  Information Exposure 
+  --Description:
+    --The CLI in npm before 2.15.1 and 3.x before 3.8.3, as used in Node.js 0.10 before 0.10.44, 0.12 before 0.12.13, 4 before 4.4.2, and 5 before 5.10.0, includes bearer tokens with arbitrary requests, which allows remote HTTP servers to obtain sensitive information by reading Authorization headers.
+4.1.1
+  --Id: d11982e3-0956-4b69-867b-9e4c77eb0444
+  --Reference: https://ossindex.sonatype.org/vuln/d11982e3-0956-4b69-867b-9e4c77eb0444
+  --Provided by: OSS Index
+--[5/17] [CVE-2015-8855]  Resource Management Errors 
+  --Description:
+    --The semver package before 4.3.2 for Node.js allows attackers to cause a denial of service (CPU consumption) via a long version string, aka a "regular expression denial of service (ReDoS)."
+4.1.1
+  --Id: 630522d1-8cab-41ea-9c11-c4978a195661
+  --Reference: https://ossindex.sonatype.org/vuln/630522d1-8cab-41ea-9c11-c4978a195661
+  --Provided by: OSS Index
+--[6/17] [CVE-2016-2086]  Improper Input Validation 
+  --Description:
+    --Node.js 0.10.x before 0.10.42, 0.12.x before 0.12.10, 4.x before 4.3.0, and 5.x before 5.6.0 allow remote attackers to conduct HTTP request smuggling attacks via a crafted Content-Length HTTP header.
+4.1.1
+  --Id: 2991a6ea-a02e-4552-a7f4-e2274ebbdc80
+  --Reference: https://ossindex.sonatype.org/vuln/2991a6ea-a02e-4552-a7f4-e2274ebbdc80
+  --Provided by: OSS Index
+--[7/17] [CVE-2016-2216]  Improper Input Validation 
+  --Description:
+    --The HTTP header parsing code in Node.js 0.10.x before 0.10.42, 0.11.6 through 0.11.16, 0.12.x before 0.12.10, 4.x before 4.3.0, and 5.x before 5.6.0 allows remote attackers to bypass an HTTP response-splitting protection mechanism via UTF-8 encoded Unicode characters in the HTTP header, as demonstrated by %c4%8d%c4%8a.
+4.1.1
+  --Id: 1cf77d11-50d1-4dd7-abed-1f3fac878518
+  --Reference: https://ossindex.sonatype.org/vuln/1cf77d11-50d1-4dd7-abed-1f3fac878518
+  --Provided by: OSS Index
+--[8/17] [CVE-2017-11499]  Improper Input Validation 
+  --Description:
+    --Node.js v4.0 through v4.8.3, all versions of v5.x, v6.0 through v6.11.0, v7.0 through v7.10.0, and v8.0 through v8.1.3 was susceptible to hash flooding remote DoS attacks as the HashTable seed was constant across a given released version of Node.js.
+      This was a result of building with V8 snapshots enabled by default which caused the initially randomized seed to be overwritten on startup.
+4.1.1
+  --Id: 64b384bb-02dd-4fd0-a5ce-7ccd98fc1542
+  --Reference: https://ossindex.sonatype.org/vuln/64b384bb-02dd-4fd0-a5ce-7ccd98fc1542
+  --Provided by: OSS Index
+--[9/17] [CVE-2015-7384]  Uncontrolled Resource Consumption ("Resource Exhaustion") 
+  --Description:
+    --Node.js 4.0.0, 4.1.0, and 4.1.1 allows remote attackers to cause a denial of service.
+4.1.1
+  --Id: 89ed4a5d-becb-4d41-9ebc-d46b249f37de
+  --Reference: https://ossindex.sonatype.org/vuln/89ed4a5d-becb-4d41-9ebc-d46b249f37de
+  --Provided by: OSS Index
+--[10/17] [CVE-2016-5325]  Improper Neutralization of CRLF Sequences in HTTP Headers ("HTTP Response Splitting") 
+  --Description:
+    --CRLF injection vulnerability in the ServerResponse#writeHead function in Node.js 0.10.x before 0.10.47, 0.12.x before 0.12.16, 4.x before 4.6.0, and 6.x before 6.7.0 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via the reason argument.
+4.1.1
+  --Id: 03383b53-8d4f-4012-a2e9-6eefe01a7be1
+  --Reference: https://ossindex.sonatype.org/vuln/03383b53-8d4f-4012-a2e9-6eefe01a7be1
+  --Provided by: OSS Index
+--[11/17] [CVE-2016-7099]  Data Handling 
+  --Description:
+    --The tls.checkServerIdentity function in Node.js 0.10.x before 0.10.47, 0.12.x before 0.12.16, 4.x before 4.6.0, and 6.x before 6.7.0 does not properly handle wildcards in name fields of X.509 certificates, which allows man-in-the-middle attackers to spoof servers via a crafted certificate.
+4.1.1
+  --Id: 45994d74-44e3-4e1c-8ba4-384a8bd6c6a8
+  --Reference: https://ossindex.sonatype.org/vuln/45994d74-44e3-4e1c-8ba4-384a8bd6c6a8
+  --Provided by: OSS Index
+--[12/17] [CVE-2018-7159]  Improper Input Validation 
+  --Description:
+    --The HTTP parser in all current versions of Node.js ignores spaces in the `Content-Length` header, allowing input such as `Content-Length: 1 2` to be interpreted as having a value of `12`.
+      The HTTP specification does not allow for spaces in the `Content-Length` value and the Node.js HTTP parser has been brought into line on this particular difference.
+      The security risk of this flaw to Node.js users is considered to be VERY LOW as it is difficult, and may be impossible, to craft an attack that makes use of this flaw in a way that could not already be achieved by supplying an incorrect value for `Content-Length`.
+      Vulnerabilities may exist in user-code that make incorrect assumptions about the potential accuracy of this value compared to the actual length of the data supplied.
+      Node.js users crafting lower-level HTTP utilities are advised to re-check the length of any input supplied after parsing is complete.
+4.1.1
+  --Id: 9cc431eb-6510-4ec8-ada8-47780fbf287c
+  --Reference: https://ossindex.sonatype.org/vuln/9cc431eb-6510-4ec8-ada8-47780fbf287c
+  --Provided by: OSS Index
+--[13/17] [CVE-2018-7158]  Improper Input Validation 
+  --Description:
+    --The `'path'` module in the Node.js 4.x release line contains a potential regular expression denial of service (ReDoS) vector.
+      The code in question was replaced in Node.js 6.x and later so this vulnerability only impacts all versions of Node.js 4.x.
+      The regular expression, `splitPathRe`, used within the `'path'` module for the various path parsing functions, including `path.dirname()`, `path.extname()` and `path.parse()` was structured in such a way as to allow an attacker to craft a string, that when passed through one of these functions, could take a significant amount of time to evaluate, potentially leading to a full denial of service.
+4.1.1
+  --Id: b31798b7-0bf8-464b-a53f-5877a2a5a915
+  --Reference: https://ossindex.sonatype.org/vuln/b31798b7-0bf8-464b-a53f-5877a2a5a915
+  --Provided by: OSS Index
+--[14/17] [CVE-2018-5407]  Information Exposure 
+  --Description:
+    --Simultaneous Multi-threading (SMT) in processors can enable local users to exploit software vulnerable to timing attacks via a side-channel timing attack on 'port contention'.
+4.1.1
+  --Id: 56623b2d-6166-4edb-ace2-91bf525f44ff
+  --Reference: https://ossindex.sonatype.org/vuln/56623b2d-6166-4edb-ace2-91bf525f44ff
+  --Provided by: OSS Index
+--[15/17] [CVE-2018-12115] In all versions of Node.js prior to 6.14.4, 8.11.4 and 10.9.0 when used with UCS... 
+  --Description:
+    --In all versions of Node.js prior to 6.14.4, 8.11.4 and 10.9.0 when used with UCS-2 encoding (recognized by Node.js under the names `'ucs2'`, `'ucs-2'`, `'utf16le'` and `'utf-16le'`), `Buffer#write()` can be abused to write outside of the bounds of a single `Buffer`.
+      Writes that start from the second-to-last position of a buffer cause a miscalculation of the maximum length of the input bytes to be written.
+4.1.1
+  --Id: 0f718d9c-5cca-44f6-8ca2-2cafe5bfe406
+  --Reference: https://ossindex.sonatype.org/vuln/0f718d9c-5cca-44f6-8ca2-2cafe5bfe406
+  --Provided by: OSS Index
+--[16/17] CWE-770: Allocation of Resources Without Limits or Throttling 
+  --Description:
+    --The software allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on how many resources can be allocated, in violation of the intended security policy for that actor.
+4.1.1
+  --Id: da7a1fb7-07c1-4066-a3b4-7c4d88823517
+  --Reference: https://ossindex.sonatype.org/vuln/da7a1fb7-07c1-4066-a3b4-7c4d88823517
+  --Provided by: OSS Index
+--[17/17] [CVE-2019-5739]  Uncontrolled Resource Consumption ("Resource Exhaustion") 
+  --Description:
+    --Keep-alive HTTP and HTTPS connections can remain open and inactive for up to 2 minutes in Node.js 6.16.0 and earlier.
+      Node.js 8.0.0 introduced a dedicated server.keepAliveTimeout which defaults to 5 seconds.
+      The behavior in Node.js 6.16.0 and earlier is a potential Denial of Service (DoS) attack vector.
+      Node.js 6.17.0 introduces server.keepAliveTimeout and the 5-second default.
+4.1.1
+  --Id: fdd192f7-06c4-4d33-add1-684a14e45435
+  --Reference: https://ossindex.sonatype.org/vuln/fdd192f7-06c4-4d33-add1-684a14e45435
+  --Provided by: OSS Index
+
+[2/33] UmbracoCms [VULNERABLE]  8 known vulnerabilities,  8 affecting installed package version(s): [6.0.0]
+--[1/8] [CVE-2017-15279]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Cross-site scripting (XSS) vulnerability in Umbraco CMS before 7.7.3 allows remote attackers to inject arbitrary web script or HTML via the "page name" (aka nodename) parameter during the creation of a new page, related to Umbraco.Web.UI/umbraco/dialogs/Publish.aspx.cs and Umbraco.Web/umbraco.presentation/umbraco/dialogs/notifications.aspx.cs.
+6.0.0
+  --Id: 13e34c16-bf2c-497d-9253-706185905129
+  --Reference: https://ossindex.sonatype.org/vuln/13e34c16-bf2c-497d-9253-706185905129
+  --Provided by: OSS Index
+--[2/8] [CVE-2017-15280]  Improper Restriction of XML External Entity Reference ("XXE") 
+  --Description:
+    --XML external entity (XXE) vulnerability in Umbraco CMS before 7.7.3 allows attackers to obtain sensitive information by reading files on the server or sending TCP requests to intranet hosts (aka SSRF), related to Umbraco.Web/umbraco.presentation/umbraco/dialogs/importDocumenttype.aspx.cs.
+6.0.0
+  --Id: 28e0a953-d001-48b2-acc3-39cedd595721
+  --Reference: https://ossindex.sonatype.org/vuln/28e0a953-d001-48b2-acc3-39cedd595721
+  --Provided by: OSS Index
+--[3/8] Multiple vulnerabilities 
+  --Description:
+    --> During one of the regular security audits that independent security firms (in this case: MWR Labs) do of the core, a severe security vulnerability was found in the integration web services of Umbraco and we recommend everyone to take immediate action to prevent any exploit.> > ...
+      for now we ask you to remove the following file from all your Umbraco installations:> > /bin/umbraco.webservices.dll> > -- [umbraco.com](https://umbraco.com/blog/security-vulnerability-found-immediate-action-recommended/)
+6.0.0
+  --Id: b23f9aaa-db0a-4eb5-9c57-0eec46017953
+  --Reference: https://ossindex.sonatype.org/vuln/b23f9aaa-db0a-4eb5-9c57-0eec46017953
+  --Provided by: OSS Index
+--[4/8] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+6.0.0
+  --Id: 91d9b638-bab4-4ca6-aa2e-80ae05aa1f3e
+  --Reference: https://ossindex.sonatype.org/vuln/91d9b638-bab4-4ca6-aa2e-80ae05aa1f3e
+  --Provided by: OSS Index
+--[5/8] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+6.0.0
+  --Id: b3f3299b-24d7-4ea0-b9c8-617abca38636
+  --Reference: https://ossindex.sonatype.org/vuln/b3f3299b-24d7-4ea0-b9c8-617abca38636
+  --Provided by: OSS Index
+--[6/8] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+6.0.0
+  --Id: 2e8376ab-993f-45ae-8739-b4d4b164d665
+  --Reference: https://ossindex.sonatype.org/vuln/2e8376ab-993f-45ae-8739-b4d4b164d665
+  --Provided by: OSS Index
+--[7/8] [CVE-2013-4793]  Improper Authentication 
+  --Description:
+    --The update function in umbraco.webservices/templates/templateService.cs in the TemplateService component in Umbraco CMS before 6.0.4 does not require authentication, which allows remote attackers to execute arbitrary ASP.NET code via a crafted SOAP request.
+6.0.0
+  --Id: dcf81085-0de1-47a1-ae60-dfa6f18ca0b8
+  --Reference: https://ossindex.sonatype.org/vuln/dcf81085-0de1-47a1-ae60-dfa6f18ca0b8
+  --Provided by: OSS Index
+--[8/8] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+6.0.0
+  --Id: 839c2594-0439-4583-aff0-2ac010299de4
+  --Reference: https://ossindex.sonatype.org/vuln/839c2594-0439-4583-aff0-2ac010299de4
+  --Provided by: OSS Index
+
+[3/33] jQuery [VULNERABLE]  7 known vulnerabilities,  7 affecting installed package version(s): [1.6]
+--[1/7] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+1.6
+  --Id: 52f593c8-7729-435c-b9df-a7bb9ded8589
+  --Reference: https://ossindex.sonatype.org/vuln/52f593c8-7729-435c-b9df-a7bb9ded8589
+  --Provided by: OSS Index
+--[2/7] [CVE-2011-4969]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3, when using location.hash to select elements, allows remote attackers to inject arbitrary web script or HTML via a crafted tag.
+1.6
+  --Id: fe8b44f2-8604-4d1a-95be-ffce5f6f8f97
+  --Reference: https://ossindex.sonatype.org/vuln/fe8b44f2-8604-4d1a-95be-ffce5f6f8f97
+  --Provided by: OSS Index
+--[3/7] [CVE-2015-9251]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed.
+1.6
+  --Id: 3b3ba2f8-9c2c-4afe-b593-75c6b3fd4bb7
+  --Reference: https://ossindex.sonatype.org/vuln/3b3ba2f8-9c2c-4afe-b593-75c6b3fd4bb7
+  --Provided by: OSS Index
+--[4/7] [CVE-2012-6708]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks.
+      The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion.
+      In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility when attempting to construct a malicious payload.
+      In fixed versions, jQuery only deems the input to be HTML if it explicitly starts with the '<' character, limiting exploitability only to attackers who can control the beginning of a string, which is far less common.
+1.6
+  --Id: b510dae9-a933-4169-b010-0325829abf42
+  --Reference: https://ossindex.sonatype.org/vuln/b510dae9-a933-4169-b010-0325829abf42
+  --Provided by: OSS Index
+--[5/7] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+1.6
+  --Id: bb07990f-5984-4107-a7ee-27d0c09a1698
+  --Reference: https://ossindex.sonatype.org/vuln/bb07990f-5984-4107-a7ee-27d0c09a1698
+  --Provided by: OSS Index
+--[6/7] [CVE-2019-11358]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution.
+      If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.
+1.6
+  --Id: 11b6563a-ead6-4040-83e5-455f36519d1b
+  --Reference: https://ossindex.sonatype.org/vuln/11b6563a-ead6-4040-83e5-455f36519d1b
+  --Provided by: OSS Index
+--[7/7] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+1.6
+  --Id: 5143404a-0e8c-420a-aef1-dccfd1bb3ea4
+  --Reference: https://ossindex.sonatype.org/vuln/5143404a-0e8c-420a-aef1-dccfd1bb3ea4
+  --Provided by: OSS Index
+
+[4/33] jQuery.UI.Combined [VULNERABLE]  3 known vulnerabilities,  3 affecting installed package version(s): [1.9.2]
+--[1/3] [CVE-2016-7103]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Cross-site scripting (XSS) vulnerability in jQuery UI before 1.12.0 might allow remote attackers to inject arbitrary web script or HTML via the closeText parameter of the dialog function.
+1.9.2
+  --Id: 762dfcfb-790c-4c7e-9ef9-ec6aaf55b963
+  --Reference: https://ossindex.sonatype.org/vuln/762dfcfb-790c-4c7e-9ef9-ec6aaf55b963
+  --Provided by: OSS Index
+--[2/3] [CVE-2010-5312]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Cross-site scripting (XSS) vulnerability in jquery.ui.dialog.js in the Dialog widget in jQuery UI before 1.10.0 allows remote attackers to inject arbitrary web script or HTML via the title option.
+1.9.2
+  --Id: a393fe48-486d-4ea4-bdd8-c7414c2a2aac
+  --Reference: https://ossindex.sonatype.org/vuln/a393fe48-486d-4ea4-bdd8-c7414c2a2aac
+  --Provided by: OSS Index
+--[3/3] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+1.9.2
+  --Id: aac65754-b75e-49c2-a2dc-62ce9a556a6a
+  --Reference: https://ossindex.sonatype.org/vuln/aac65754-b75e-49c2-a2dc-62ce9a556a6a
+  --Provided by: OSS Index
+
+[5/33] Backbone.js [VULNERABLE]  3 known vulnerabilities,  3 affecting installed package version(s): [0.3.3]
+--[1/3] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+0.3.3
+  --Id: edc967e6-699d-4dd3-9f20-0496a1f1d1d8
+  --Reference: https://ossindex.sonatype.org/vuln/edc967e6-699d-4dd3-9f20-0496a1f1d1d8
+  --Provided by: OSS Index
+--[2/3] Cross Site Scripting (XSS) in Todos example 
+  --Description:
+    --The supplied "Todos" example does not escape its data, making it possible to inject and execute JavaScript code.
+0.3.3
+  --Id: d8a5f278-b2b9-4b5b-8628-1721907b12e7
+  --Reference: https://ossindex.sonatype.org/vuln/d8a5f278-b2b9-4b5b-8628-1721907b12e7
+  --Provided by: OSS Index
+--[3/3] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+0.3.3
+  --Id: dbe5b45e-0faf-495f-857f-732a6a4733c5
+  --Reference: https://ossindex.sonatype.org/vuln/dbe5b45e-0faf-495f-857f-732a6a4733c5
+  --Provided by: OSS Index
+
+[6/33] jQuery.Migrate [VULNERABLE]  2 known vulnerabilities,  2 affecting installed package version(s): [1.1.1]
+--[1/2] CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') 
+  --Description:
+    --The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+1.1.1
+  --Id: 07546a92-aaae-4213-b266-3183aa3a14d7
+  --Reference: https://ossindex.sonatype.org/vuln/07546a92-aaae-4213-b266-3183aa3a14d7
+  --Provided by: OSS Index
+--[2/2] Cross-site-scripting (XSS) hole 
+  --Description:
+    --The major change in this version is that we?ve re-closed a cross-site-scripting (XSS) hole that was fixed in jQuery 1.7 and reintroduced by the plugin.
+      Essentially, any use of $("#...
+      <tag>") will now always be interpreted as a selector and not as HTML.
+      This is due to some developers using $(window.location.hash) and not realizing that an attacker can often control the contents of the hash on the URL to run code.
+      Always assume that any data you get from an external source may contain harmful content!
+1.1.1
+  --Id: 18d27b7e-8423-421b-ba23-c9c0b502b466
+  --Reference: https://ossindex.sonatype.org/vuln/18d27b7e-8423-421b-ba23-c9c0b502b466
+  --Provided by: OSS Index
+
+[7/33] Ember [VULNERABLE]  2 known vulnerabilities,  2 affecting installed package version(s): [1.4.0-beta1]
+--[1/2] [CVE-2014-0013]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Ember.js 1.0.x before 1.0.1, 1.1.x before 1.1.3, 1.2.x before 1.2.1, 1.3.x before 1.3.1, and 1.4.x before 1.4.0-beta.2 allows remote attackers to conduct cross-site scripting (XSS) attacks by leveraging an application that contains templates whose context is set to a user-supplied primitive value and also contain the `{{this}}` special Handlebars variable.
+1.4.0-beta1
+  --Id: 38928c97-9c12-435c-b852-b854ffc2d213
+  --Reference: https://ossindex.sonatype.org/vuln/38928c97-9c12-435c-b852-b854ffc2d213
+  --Provided by: OSS Index
+--[2/2] [CVE-2014-0014]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Ember.js 1.0.x before 1.0.1, 1.1.x before 1.1.3, 1.2.x before 1.2.1, 1.3.x before 1.3.1, and 1.4.x before 1.4.0-beta.2 allows remote attackers to conduct cross-site scripting (XSS) attacks by leveraging an application using the "{{group}}" Helper and a crafted payload.
+1.4.0-beta1
+  --Id: 8207aae5-0ec7-4ad2-9a59-6422452278d3
+  --Reference: https://ossindex.sonatype.org/vuln/8207aae5-0ec7-4ad2-9a59-6422452278d3
+  --Provided by: OSS Index
+
+[8/33] LibGit2Sharp [VULNERABLE]  1 known vulnerabilities,  1 affecting installed package version(s): [0.20.0]
+--[1/1] Git vulnerability requires git client updates 
+  --Description:
+    --A critical Git security vulnerability has been announced today, affecting all versions of the official Git client and all related software that interacts with Git repositories, including GitHub for Windows and GitHub for Mac.
+      Because this is a client-side only vulnerability, github.com and GitHub Enterprise are not directly affected.The vulnerability concerns Git and Git-compatible clients that access Git repositories in a case-insensitive or case-normalizing filesystem.
+      An attacker can craft a malicious Git tree that will cause Git to overwrite its own .git/config file when cloning or checking out a repository, leading to arbitrary command execution in the client machine.
+      Git clients running on OS X (HFS+) or any version of Microsoft Windows (NTFS, FAT) are exploitable through this vulnerability.
+      Linux clients are not affected if they run in a case-sensitive filesystem.
+0.20.0
+  --Id: cfacab46-bdf8-40d4-8d50-06420a9c0013
+  --Reference: https://ossindex.sonatype.org/vuln/cfacab46-bdf8-40d4-8d50-06420a9c0013
+  --Provided by: OSS Index
+
+[9/33] NServiceBus [VULNERABLE]  1 known vulnerabilities,  1 affecting installed package version(s): [3.2.7]
+--[1/1] Missing encryption in systems which use WireEncryptedString on nested structures 
+  --Description:
+    --Systems which use WireEncryptedString on nested structures in their messages did not have that data encrypted.
+3.2.7
+  --Id: ddfed5c0-3bc2-4f2a-b864-42cf702ba36c
+  --Reference: https://ossindex.sonatype.org/vuln/ddfed5c0-3bc2-4f2a-b864-42cf702ba36c
+  --Provided by: OSS Index
+
+[10/33] Twilio.Mvc [VULNERABLE]  1 known vulnerabilities,  1 affecting installed package version(s): [3.2.0]
+--[1/1] XML External Entity (XXE) 
+  --Description:
+    --TwiMLResult provides an additional (unused by the library)constructor that accepts a string value and will use`XDocument.Parse()` to turn it into an XML Document.Older versions of .Net allow DOCTYPE defined ENTITYs by default.Careless use of this class (passing in unsanitized user data) isvulnerable to an XXE Attack.
+3.2.0
+  --Id: 07908746-dea1-4898-9334-1d2421e26c92
+  --Reference: https://ossindex.sonatype.org/vuln/07908746-dea1-4898-9334-1d2421e26c92
+  --Provided by: OSS Index
+
+[11/33] Microsoft.AspNet.Mvc [VULNERABLE]  1 known vulnerabilities,  1 affecting installed package version(s): [5.0.0]
+--[1/1] [CVE-2014-4075]  Improper Neutralization of Input During Web Page Generation ("Cross-site Scripting") 
+  --Description:
+    --Cross-site scripting (XSS) vulnerability in System.Web.Mvc.dll in Microsoft ASP.NET Model View Controller (MVC) 2.0 through 5.1 allows remote attackers to inject arbitrary web script or HTML via a crafted web page, aka "MVC XSS Vulnerability."
+5.0.0
+  --Id: b81ac3fd-298b-4daf-a462-d92c9d742b9e
+  --Reference: https://ossindex.sonatype.org/vuln/b81ac3fd-298b-4daf-a462-d92c9d742b9e
+  --Provided by: OSS Index
+
+[12/33] jQuery.Validation [VULNERABLE]  1 known vulnerabilities,  1 affecting installed package version(s): [1.6.0]
+--[1/1] XSS attacks against included PHP files 
+  --Description:
+    --These issues come down to XSS "attacks" via the included php files.
+      Not a big deal really, though instead of trying to patch those files, I'd rather get rid of them completely.
+      The unit tests already make use of mockjax to get rid of actual server side scripts, we should be able to do that for the other demo php files as well.
+1.6.0
+  --Id: 10aaf64c-51ed-40ec-9671-d47118efc37f
+  --Reference: https://ossindex.sonatype.org/vuln/10aaf64c-51ed-40ec-9671-d47118efc37f
+  --Provided by: OSS Index
+
+[13/33] AntiXSS no known vulnerabilities.
+[14/33] Bytescout.Spreadsheet no known vulnerabilities.
+[15/33] Aspose.Pdf no known vulnerabilities.
+[16/33] Microsoft.Data.Services no known vulnerabilities.
+[17/33] WiX.Toolset.UnofficialFork no known vulnerabilities.
+[18/33] Premotion.AspNet.AppHarbor.Integration no known vulnerabilities.
+[19/33] Microsoft.IdentityModel.Tokens no known vulnerabilities.
+[20/33] Newtonsoft.Json no known vulnerabilities.
+[21/33] EntityFramework no known vulnerabilities.
+[22/33] AutoMapper no known vulnerabilities.
+[23/33] log4net no known vulnerabilities.
+[24/33] Microsoft.Owin.Host.SystemWeb no known vulnerabilities.
+[25/33] Microsoft.AspNet.SignalR no known vulnerabilities.
+[26/33] System.Data.SQLite no known vulnerabilities.
+[27/33] Dapper no known vulnerabilities.
+[28/33] System.Net.Http no known vulnerabilities.
+[29/33] Microsoft.Net.Http no known vulnerabilities.
+[30/33] SSH.NET no known vulnerabilities.
+[31/33] Microsoft.jQuery.Unobtrusive.Ajax no known vulnerabilities.
+[32/33] Microsoft.Owin.Security no known vulnerabilities.
+[33/33] chocolatey no known vulnerabilities.
+
+Vulnerabilities Data Providers
+==============================
+
+OSS Index https://ossindex.sonatype.org OSS Index is a free index of software information, focusing on vulnerabilities. The data has been made available to the community through a REST API as well as several open source tools. Particular focus is being made on software packages, both those used for development libraries as well as installation packages.

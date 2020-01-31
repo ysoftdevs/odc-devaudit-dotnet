@@ -1,0 +1,34 @@
+#!/bin/bash
+# safety settings
+set -u
+set -e
+set -o pipefail
+
+# Generates DA reports for unit tests.
+
+if [ $# != 1 ]; then
+  echo "Usage: $0 <path-to-DevAudit>"
+  exit 1
+fi
+
+if [ "$(basename "$0")" == analyze-missing-projects ]; then
+  ONLY_MISSING=1
+else
+  ONLY_MISSING=0
+fi
+
+DA_PATH=$1
+
+for i in out.new2 empty single two-versions two-versions-two-vulns; do
+  if [ -e "$i.log" ] && [ "$ONLY_MISSING" == 1 ]; then
+    echo "Skipping $i"
+  else
+    echo "Generating $i…"
+    if ! "$DA_PATH/devaudit.exe" nuget --file "projects/$i.config" > "$i.log.wip"; then #  -n
+      echo "Failed to generate $i"
+      exit 1
+    fi
+    sync
+    mv "$i.log.wip" "$i.log"
+  fi
+done

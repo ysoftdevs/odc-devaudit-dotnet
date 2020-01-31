@@ -1,0 +1,3 @@
+com.ysoft.security.odc.dotnet.DllFindingDotNetEnhancerAnalyzer
+com.ysoft.security.odc.dotnet.DevAuditDotNetEnhancerAnalyzer
+com.ysoft.security.odc.dotnet.FalsePositiveWarningAnalyzer
